@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: whitesmoke;
+}
+input {
+    width: 10rem;
+    height: 1.75rem;
+}
+.buttons {
+    margin-left: 50px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 1.75rem;
+    width: 10rem;
+}
