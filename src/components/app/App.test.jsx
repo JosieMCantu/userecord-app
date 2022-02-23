@@ -1,16 +1,17 @@
+/**
+ * @jest-environment jsdom
+ */
 import React from 'react';
-import {screen, getByText} from '@testing-library/react';
-import App from '../App';
+import { render, screen, getByText } from '@testing-library/react';
+import App from '../app/App';
 
-describe.skip('useRecord custom hook', () => {
-  
-  it.skip('changes colors depending on its place in the array', async () => {
-
+describe('useRecord custom hook', () => {
+  it('changes colors depending on its place in the array', () => {
       render(<App />)
 
-      screen.getByText('previous')
-      screen.getByText('next')
+      screen.getByText('undo')
+      screen.getByText('redo')
 
-      const button = await screen.findByRole('button', {name: 'button'})
+      const button = screen.findByRole('button', {name: 'button'})
   })
 })
