@@ -12,8 +12,8 @@ export const useRecord = () => {
     }
     
     const handleUndoClick = () => {
-        setCurrent(record[index - 1]);
         setIndex(index - 1);
+        setCurrent(record[index - 1]);
     }
 
     const handleRedoClick = () => {

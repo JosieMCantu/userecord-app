@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../app/App.css';
-import { useRecord } from '../hooks/useRecord';
+import { useRecord } from '../../hooks/useRecord';
 
 function Record() {
     const { current, index, record, handleColorChange, handleUndoClick, handleRedoClick } = useRecord('#FF0000');
